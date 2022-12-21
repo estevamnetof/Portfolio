@@ -55,8 +55,6 @@ li {
     margin: 0 auto 2rem auto;
 }
 
-
-
 .profile span {
     font-size: 24px;
 }
@@ -76,6 +74,25 @@ li {
     margin-right: 1rem;
 }
 
+.redes-sociais li img {
+    color: #606060;
+    width: 2rem;
+}
+
+.tecnologias {
+    width: 20rem;
+}
+
+.tecnologias .logos img {
+    width: 4rem;
+}
+
+.tecnologias .conhecimentos {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 .portifolio {
     max-width: 886px;
     box-sizing: border-box;
@@ -84,8 +101,6 @@ li {
 .portifolio ul {
     margin-top: 3rem;
 }
-
-
 
 .portifolio li {
     display: grid;
