@@ -1,3 +1,12 @@
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px 
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas:: acima de 1200px
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
@@ -46,6 +55,7 @@ li {
     padding: 4rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 8rem;
 }
@@ -79,19 +89,63 @@ li {
     width: 2rem;
 }
 
+/* sobre mim */
+
+.sobre {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sobre p {
+    text-indent: 30px;
+}
+
+/* conhecimentos */
+
+.tecbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .tecnologias {
     width: 20rem;
 }
 
-.tecnologias .logos img {
-    width: 4rem;
+.box h1 {
+    padding-bottom: 2rem;
 }
 
 .tecnologias .conhecimentos {
     display: flex;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+    align-items: center;
+    gap: 20px;
 }
+
+.tecnologias .logos {
+    width: 4rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.tecnologias .logos:hover {
+    transform: scale(1.08);
+}
+
+.tecbox .box {
+    width: 20rem;
+} 
+
+.box .descricao {
+    display: none;
+}
+
+.box .descricao.aberto {
+    display: block;
+}
+
+/* portifolio */
 
 .portifolio {
     max-width: 886px;
@@ -134,6 +188,32 @@ li {
 
 .aviso {
     margin-top: 2rem;
+}
+
+/* back to top */
+
+.back-to-top {
+    background: #aeaeae;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: fixed;
+    right: 32px;
+    bottom: 16px;
+    cursor: pointer;
+    opacity: 0;
+    animation: .3s all;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 @media (max-width: 600px) {
