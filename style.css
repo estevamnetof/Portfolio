@@ -177,6 +177,25 @@ li {
     margin-top: 1rem;
 }
 
+.visibility {
+    position: relative;
+}
+
+.view {
+    position: absolute;
+    left: -60%;
+    top: 40%;
+    color: white;
+    background: #aeaeae;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.view.active {
+    opacity: 1;
+}
+
 .copyright {
     font-size: 24px;
     color: white;
