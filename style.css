@@ -152,6 +152,10 @@ li {
     box-sizing: border-box;
 }
 
+.portifolio h1 {
+    font-weight: bold;
+}
+
 .portifolio ul {
     margin-top: 3rem;
 }
@@ -174,29 +178,28 @@ li {
 
 .portifolio h2 {
     font-weight: normal;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.visibility {
-    position: relative;
+.portifolio p {
+    text-indent: 1rem;
 }
 
-.view {
-    position: absolute;
-    color: white;
-    background: #aeaeae;
-    padding: 10px;
-    border-radius: 50%;
-    opacity: 0;
-}
+/* mostrar mais/menos */
 
-.view.active {
-    opacity: 1;
-}
-
-.mostrar-mais {
+.mostrar-m {
     padding: 10px;
     cursor: pointer;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mostrar-m.View {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .extended {
