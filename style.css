@@ -183,8 +183,6 @@ li {
 
 .view {
     position: absolute;
-    left: -60%;
-    top: 40%;
     color: white;
     background: #aeaeae;
     padding: 10px;
@@ -195,6 +193,22 @@ li {
 .view.active {
     opacity: 1;
 }
+
+.mostrar-mais {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.extended {
+    display: none;
+}
+
+.extended.mostrar {
+    display: block;
+    animation: .3s all;
+}
+
+/* Footer */
 
 .copyright {
     font-size: 24px;
