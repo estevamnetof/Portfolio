@@ -1,0 +1,25 @@
+// Fontes
+$fonte-principal: 'Source Code Pro', monospace;
+
+// Cores
+$cor-fonte: #aeaeae;
+$cor-fonte-2: #606060;
+$cor-box: #EEE;
+$cor-white: #fff;
+
+@function em($pixel, $context: 16) {
+    @return $pixel / $context + em
+}
+
+@mixin tipo-1($size) {
+    font-family: $fonte-principal;
+    @if $size == 18 {
+        font-size: em(18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+    }
+    @else if $size == 36 {
+        font-size: em(36);
+    }
+}

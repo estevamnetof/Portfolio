@@ -15,15 +15,15 @@ Grande telas:: acima de 1200px
 }
 
 body {
-    font-family: 'Source Code Pro', monospace;
-    background: url(imagens/pexels-pixabay-270348.jpg) no-repeat top center;
+    font-family: $fonte-principal;
+    background: url(../imagens/pexels-pixabay-270348.jpg) no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
     display: grid;
     align-items: center;
     justify-items: center;
     height: 100vh;
-    color: #aeaeae;
+    color: $cor-fonte;
 }
 
 .container {
@@ -51,7 +51,7 @@ li {
 }
 
 .box {
-    background: #EEE;
+    background: $cor-box;
     padding: 4rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
@@ -66,11 +66,11 @@ li {
 }
 
 .profile span {
-    font-size: 24px;
+    @include tipo-1(24);
 }
 
 .profile p {
-    font-size: 18px;
+    @include tipo-1(18);
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
@@ -85,7 +85,7 @@ li {
 }
 
 .redes-sociais li img {
-    color: #606060;
+    color: $cor-fonte-2;
     width: 2rem;
 }
 
@@ -165,7 +165,7 @@ li {
     grid-template-columns: 1fr 1fr; 
     text-align: left;
     gap: 1rem;
-    color: #606060;
+    color: $cor-fonte-2;
 }
 
 .portifolio li + li {
@@ -215,7 +215,7 @@ li {
 
 .copyright {
     font-size: 24px;
-    color: white;
+    color: $cor-white;
     text-shadow: 2px 2px 16px black;
     margin-top: 50vh;
     padding-bottom: 50vh;
@@ -229,7 +229,7 @@ li {
 /* back to top */
 
 .back-to-top {
-    background: #aeaeae;
+    background: $cor-fonte;
     padding: 10px 15px;
     border-radius: 8px;
     position: fixed;
@@ -243,7 +243,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: $cor-white;
 }
 
 .back-to-top.active {
@@ -283,7 +283,7 @@ a {
     }
 
     .copyright {
-        font-size: 18px;
+        @include tipo-1(18);
         color: #606060;
         margin: 0;
         padding: 4rem 0;
